@@ -48,7 +48,7 @@ namespace TDE_M.F_Calculadora
         private void btnClose_MouseLeave(object sender, EventArgs e)
         {
             btnClose.ForeColor = Color.FromArgb(230, 57, 70);
-            btnClose.BackColor = Color.FromArgb(29, 53, 87);
+            btnClose.BackColor = Color.FromArgb(0, 8, 20);
 
             btnClose.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
         }
@@ -99,6 +99,35 @@ namespace TDE_M.F_Calculadora
         {
             btnTempo.ForeColor = Color.White;
             btnTempo.FlatAppearance.BorderColor = Color.White;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Para de clicar ai, bobão");
+        }
+
+        private void btnJuros_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+        }
+
+        private void btnCapital_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.ShowDialog();
+        }
+
+        private void btnTaxa_Click(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4();
+            f4.ShowDialog();
+        }
+
+        private void btnTempo_Click(object sender, EventArgs e)
+        {
+            Form5 f5 = new Form5();
+            f5.ShowDialog();
         }
     }
 }

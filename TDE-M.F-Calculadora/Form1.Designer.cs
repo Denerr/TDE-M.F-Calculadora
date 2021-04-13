@@ -34,10 +34,13 @@ namespace TDE_M.F_Calculadora
             this.btnCapital = new System.Windows.Forms.Button();
             this.btnTaxa = new System.Windows.Forms.Button();
             this.btnTempo = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
             this.btnClose.FlatAppearance.BorderSize = 2;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -66,11 +69,13 @@ namespace TDE_M.F_Calculadora
             this.btnJuros.TabIndex = 1;
             this.btnJuros.Text = "Juros";
             this.btnJuros.UseVisualStyleBackColor = true;
+            this.btnJuros.Click += new System.EventHandler(this.btnJuros_Click);
             this.btnJuros.MouseEnter += new System.EventHandler(this.btnJuros_MouseEnter);
             this.btnJuros.MouseLeave += new System.EventHandler(this.btnJuros_MouseLeave);
             // 
             // btnCapital
             // 
+            this.btnCapital.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCapital.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCapital.FlatAppearance.BorderSize = 2;
             this.btnCapital.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -82,11 +87,13 @@ namespace TDE_M.F_Calculadora
             this.btnCapital.TabIndex = 2;
             this.btnCapital.Text = "Capital";
             this.btnCapital.UseVisualStyleBackColor = true;
+            this.btnCapital.Click += new System.EventHandler(this.btnCapital_Click);
             this.btnCapital.MouseEnter += new System.EventHandler(this.btnCapital_MouseEnter);
             this.btnCapital.MouseLeave += new System.EventHandler(this.btnCapital_MouseLeave);
             // 
             // btnTaxa
             // 
+            this.btnTaxa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnTaxa.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnTaxa.FlatAppearance.BorderSize = 2;
             this.btnTaxa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -98,11 +105,13 @@ namespace TDE_M.F_Calculadora
             this.btnTaxa.TabIndex = 3;
             this.btnTaxa.Text = "Taxa Unitária";
             this.btnTaxa.UseVisualStyleBackColor = true;
+            this.btnTaxa.Click += new System.EventHandler(this.btnTaxa_Click);
             this.btnTaxa.MouseEnter += new System.EventHandler(this.btnTaxa_MouseEnter);
             this.btnTaxa.MouseLeave += new System.EventHandler(this.btnTaxa_MouseLeave);
             // 
             // btnTempo
             // 
+            this.btnTempo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTempo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnTempo.FlatAppearance.BorderSize = 2;
             this.btnTempo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -114,23 +123,55 @@ namespace TDE_M.F_Calculadora
             this.btnTempo.TabIndex = 4;
             this.btnTempo.Text = "Periodo de Tempo";
             this.btnTempo.UseVisualStyleBackColor = true;
+            this.btnTempo.Click += new System.EventHandler(this.btnTempo_Click);
             this.btnTempo.MouseEnter += new System.EventHandler(this.btnTempo_MouseEnter);
             this.btnTempo.MouseLeave += new System.EventHandler(this.btnTempo_MouseLeave);
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(196, 66);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(400, 38);
+            this.lblTitulo.TabIndex = 5;
+            this.lblTitulo.Text = "Calculadora de Juros Simples";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(217, 120);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(362, 30);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Selecione um dos Calculos Abaixo:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(8)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnTempo);
             this.Controls.Add(this.btnTaxa);
             this.Controls.Add(this.btnCapital);
             this.Controls.Add(this.btnJuros);
             this.Controls.Add(this.btnClose);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Form1";
+            this.Text = "Menu Principal";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -141,6 +182,8 @@ namespace TDE_M.F_Calculadora
         private System.Windows.Forms.Button btnCapital;
         private System.Windows.Forms.Button btnTaxa;
         private System.Windows.Forms.Button btnTempo;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label label1;
     }
 }
 
