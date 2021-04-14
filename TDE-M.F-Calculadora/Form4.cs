@@ -30,6 +30,11 @@ namespace TDE_M.F_Calculadora
 
             txtResultado.Text = resultado.ToString();
         }
+        private void btnPercent_Click(object sender, EventArgs e)
+        {
+            resultado = resultado / 100;
+            txtResultado.Text = resultado.ToString() + "%";
+        }
 
         private void btnResultado_MouseEnter(object sender, EventArgs e)
         {
@@ -58,12 +63,6 @@ namespace TDE_M.F_Calculadora
         {
             btnPercent.ForeColor = Color.White;
             btnPercent.FlatAppearance.BorderColor = Color.White;
-        }
-
-        private void btnPercent_Click(object sender, EventArgs e)
-        {
-            resultado = resultado / 100;
-            txtResultado.Text = resultado.ToString() + "%";
         }
     }
 }

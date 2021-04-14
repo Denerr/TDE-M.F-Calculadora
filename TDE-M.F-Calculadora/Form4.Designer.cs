@@ -137,25 +137,28 @@ namespace TDE_M.F_Calculadora
             // txtJuros
             // 
             this.txtJuros.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtJuros.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.txtJuros.Location = new System.Drawing.Point(38, 56);
             this.txtJuros.Name = "txtJuros";
-            this.txtJuros.Size = new System.Drawing.Size(167, 20);
+            this.txtJuros.Size = new System.Drawing.Size(167, 30);
             this.txtJuros.TabIndex = 0;
             // 
             // txtCapital
             // 
             this.txtCapital.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtCapital.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.txtCapital.Location = new System.Drawing.Point(37, 130);
             this.txtCapital.Name = "txtCapital";
-            this.txtCapital.Size = new System.Drawing.Size(167, 20);
+            this.txtCapital.Size = new System.Drawing.Size(167, 30);
             this.txtCapital.TabIndex = 1;
             // 
             // txtTempo
             // 
             this.txtTempo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtTempo.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.txtTempo.Location = new System.Drawing.Point(37, 204);
             this.txtTempo.Name = "txtTempo";
-            this.txtTempo.Size = new System.Drawing.Size(167, 20);
+            this.txtTempo.Size = new System.Drawing.Size(167, 30);
             this.txtTempo.TabIndex = 2;
             // 
             // Form4
