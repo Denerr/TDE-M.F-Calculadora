@@ -17,7 +17,7 @@ namespace TDE_M.F_Calculadora
             InitializeComponent();
         }
 
-        public double resultado, juros, capital, tempo;
+        public double resultado, juros, capital, tempo ,aux;
 
         private void btnResultado_Click(object sender, EventArgs e)
         {
@@ -26,13 +26,15 @@ namespace TDE_M.F_Calculadora
             capital = Double.Parse(txtCapital.Text);
             tempo = Double.Parse(txtTempo.Text);
 
-            resultado = capital * tempo / juros; 
+            aux = capital * tempo;
+
+            resultado = juros / aux; 
 
             txtResultado.Text = resultado.ToString();
         }
         private void btnPercent_Click(object sender, EventArgs e)
         {
-            resultado = resultado / 100;
+            resultado = resultado * 100;
             txtResultado.Text = resultado.ToString() + "%";
         }
 

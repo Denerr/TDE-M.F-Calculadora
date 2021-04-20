@@ -16,5 +16,32 @@ namespace TDE_M.F_Calculadora
         {
             InitializeComponent();
         }
+
+        private void btnResultado_Click(object sender, EventArgs e)
+        {
+            double resultado, capital, taxa, tempo;
+
+            capital = Double.Parse(txtCapital.Text);
+            taxa = Double.Parse(txtTaxa.Text);
+            tempo = Double.Parse(txtTempo.Text);
+
+            taxa = taxa / 100;
+
+            resultado = capital * taxa * tempo;
+
+            txtResultado.Text = resultado.ToString();
+        }
+
+        private void btnResultado_MouseEnter(object sender, EventArgs e)
+        {
+            btnResultado.ForeColor = Color.FromArgb(230, 57, 70);
+            btnResultado.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+        }
+
+        private void btnResultado_MouseLeave(object sender, EventArgs e)
+        {
+            btnResultado.ForeColor = Color.White;
+            btnResultado.FlatAppearance.BorderColor = Color.White;
+        }
     }
 }
