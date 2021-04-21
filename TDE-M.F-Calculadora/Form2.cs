@@ -26,6 +26,7 @@ namespace TDE_M.F_Calculadora
             taxa = Double.Parse(txtTaxa.Text);
             tempo = Double.Parse(txtTempo.Text);
 
+            //Area de calculo
             taxa = taxa / 100;
 
             resultado = capital * taxa * tempo;
