@@ -19,6 +19,7 @@ namespace TDE_M.F_Calculadora
 
         private void btnResultado_Click(object sender, EventArgs e)
         {
+            //Declaração de Variaveis
             double resultado, capital, taxa, tempo;
 
             capital = Double.Parse(txtCapital.Text);
